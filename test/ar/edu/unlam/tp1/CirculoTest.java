@@ -46,7 +46,7 @@ public class CirculoTest {
 	}
 	
 	@Test
-	public void queElPErimetroDeUnCirculoConRadio16Punto6Es104Punto3() {
+	public void queElPerimetroDeUnCirculoConRadio16Punto6Es104Punto3() {
 		Circulo circulo = new Circulo(16.6);
 		Double valorRadioEsperado = 104.30;
 		Double valorRadioObtenido = circulo.getPerimetro();
