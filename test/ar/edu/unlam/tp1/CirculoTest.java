@@ -5,51 +5,51 @@ import org.junit.Test;
 
 public class CirculoTest {
 
-	
-	
 	@Test
 	public void crearUnCirculoConRadio2() {
-		fail("Not yet implemented");
+		Circulo circulo = new Circulo(2.0);
+		Double valorRadioEsperado = 2.0;
+		Double valorRadioObtenido = circulo.getRadio();
+		assertEquals(valorRadioEsperado.doubleValue(), valorRadioObtenido.doubleValue(), 0.01);
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio3Punto7() {
-		fail("Not yet implemented");
+		Circulo circulo = new Circulo(3.7);
+		Double valorRadioEsperado = 3.7;
+		Double valorRadioObtenido = circulo.getRadio();
+		assertEquals(valorRadioEsperado.doubleValue(), valorRadioObtenido.doubleValue(), 0.01);
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio5() {
-		fail("Not yet implemented");
+		Circulo circulo = new Circulo(5.0);
+		Double valorRadioEsperado = 5.0;
+		Double valorRadioObtenido = circulo.getRadio();
+		assertEquals(valorRadioEsperado.doubleValue(), valorRadioObtenido.doubleValue(), 0.01);
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio10Punto9() {
-		fail("Not yet implemented");
+		Circulo circulo = new Circulo(10.9);
+		Double valorRadioEsperado = 10.9;
+		Double valorRadioObtenido = circulo.getRadio();
+		assertEquals(valorRadioEsperado.doubleValue(), valorRadioObtenido.doubleValue(), 0.01);
 	}
 	
 	@Test
 	public void queElAreaDeUnCirculoConRadio9Punto8Es615Punto73() {
-		fail("Not yet implemented");
+		Circulo circulo = new Circulo(9.8);
+		Double valorRadioEsperado = 61.57;//
+		Double valorRadioObtenido = circulo.getPerimetro();
+		assertEquals(valorRadioEsperado.doubleValue(), valorRadioObtenido.doubleValue(), 0.01);
 	}
 	
 	@Test
 	public void crearUnCirculoConRadio16Punto6Es865Punto67() {
-		fail("Not yet implemented");
+		Circulo circulo = new Circulo(16.6);
+		Double valorRadioEsperado = 104.30;
+		Double valorRadioObtenido = circulo.getPerimetro();
+		assertEquals(valorRadioEsperado.doubleValue(), valorRadioObtenido.doubleValue(), 0.01);
 	}
-	
-	@Test
-	public void queElTipDeAyudaDeVerde(){ // :)
-		
-		Double esperado = 1.10;
-		Double actual = 1.10;
-		
-		/**
-		 *  Recordar que el siguiente método se puede usar por que al inicio del archivo
-		 *  se importaron todos los assert con la siguiente linea 
-		 *  import static org.junit.Assert.*; 
-		 */
-		 
-		assertEquals(esperado.doubleValue(), actual.doubleValue(),0.01);
-	}
-	
 }
